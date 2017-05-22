@@ -31,10 +31,6 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-                    <file>${file.reference.jackson-core-2.8.3.jar}</file>
-                    <path-in-war>WEB-INF/lib</path-in-war>
-                </library>
-                <library dirs="200">
                     <file>${file.reference.FasterXML-jackson-annotations-jackson-annotations-2.9.0.pr3-3-g70e73a1.zip}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>

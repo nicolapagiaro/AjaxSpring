@@ -35,13 +35,13 @@ public class MainController {
      */
     @RequestMapping(value = "/search", method = RequestMethod.POST)
     public @ResponseBody
-    String search(@RequestParam("text") String text) {
+    Object search(@RequestParam("text") String text) {
         SessionFactory s = HibernateUtil.getSessionFactory();
         ArrayList<Persona> l = (ArrayList<Persona>) MainDao.searchPersone(s, text);
         
         Gson g = new Gson();
         
         
-        return g.toJson(l);
+        return l;
     }
 }

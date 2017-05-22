@@ -1,6 +1,5 @@
 package pojo;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Column;
@@ -75,7 +74,6 @@ public class Persona implements Serializable{
         this.nome = nome;
     }
     
-    @JsonIgnore
     public List<Job> getJobs() {
         return jobs;
     }
@@ -84,7 +82,6 @@ public class Persona implements Serializable{
         this.jobs = jobs;
     }
 
-    @JsonIgnore
     public Dipartimento getDipartimento() {
         return dipartimento;
     }
