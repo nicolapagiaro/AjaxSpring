@@ -1,0 +1,72 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.material-icons.inactive {
+    color: rgba(0, 0, 0, 0.26);
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.material-icons {
+    color: rgba(0, 0, 0, 0.54);
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.grey-text-costum {
+    color: #424242 !important;
+}
+
+/* checkboxes label color */
+[type="checkbox"] + label {
+  color: #424242 !important;
+}
+
+/* label color */
+.input-field label {
+    color: #424242;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, 
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label{
+    color: #64b5f6;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, 
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus{
+    border-bottom: 1px solid #64b5f6;
+    box-shadow: 0 1px 0 0 #00796b;
+}
+/* valid color */
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #64b5f6;
+    box-shadow: 0 1px 0 0 #64b5f6;
+}
+/* invalid color */
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid #c62828;
+    box-shadow: 0 1px 0 0 #c62828;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #64b5f6;
+}
+
+/* text area */
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #64b5f6;
+  box-shadow: 0 1px 0 0 #64b5f6;
+}
+
+/* text area */
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #64b5f6;
+}
+
+/* per la nav su telefono */
+.button-collapse {
+  color: #26a69a;
+}
