@@ -35,9 +35,9 @@
                             <span class="card-title">Lista persone</span>
                         </div>
                         <div class="col l3 right-align">
-                            <div class="input-field">
-                                <input id="ricerca" type="text">
-                                <label for="ricerca">Cerca</label>
+                            <div class="input-field col s12">
+                                <input id="ricerca" type="text" class="autocomplete">
+                                <label for="ricerca">Cerca..</label>
                             </div>
                         </div>
                         <div class="col l12">
@@ -51,7 +51,7 @@
                                         <th>Azioni</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="container">
                                     <c:forEach items="${listaP}" var="item">
                                         <tr>
                                             <td>${item.id}</td>
@@ -67,8 +67,8 @@
                                                 </td>
                                                 <td>
                                                     <a href="<c:url value=""/>"><i class="material-icons">mode_edit</i></a>
-                                                    <a href="<c:url value=""/>"><i class="material-icons">delete</i></a>
-                                                </td>
+                                                <a href="<c:url value=""/>"><i class="material-icons">delete</i></a>
+                                            </td>
                                         </tr>
                                     </c:forEach>
                                 </tbody>

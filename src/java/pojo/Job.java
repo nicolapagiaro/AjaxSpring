@@ -81,6 +81,4 @@ public class Job implements Serializable{
     public void setPersone(List<Persona> persone) {
         this.persone = persone;
     }
-
-   
 }
