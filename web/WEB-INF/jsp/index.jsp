@@ -37,7 +37,7 @@
                         <div class="col l3 right-align">
                             <div class="input-field col s12">
                                 <input id="ricerca" type="text" class="autocomplete">
-                                <label for="ricerca">Cerca..</label>
+                                <label for="ricerca">Cerca i dipendenti</label>
                             </div>
                         </div>
                         <div class="col l12">

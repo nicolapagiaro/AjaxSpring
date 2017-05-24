@@ -45,10 +45,6 @@ public class MainDao {
         List<Persona> persone = (List<Persona>) sessione
                 .createQuery("FROM Persona WHERE nome like '%" + text + "%'")
                 .list();
-        /**List<Dipartimento> dip = (List<Dipartimento>) sessione
-                .createSQLQuery("SELECT * FROM dipartimenti WHERE nome like '%:t%'")
-                .setParameter("t", text)
-                .list();*/
         for(Persona p : persone){
             Hibernate.initialize(p.getJobs());
             Hibernate.initialize(p.getDipartimento());

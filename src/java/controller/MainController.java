@@ -39,6 +39,8 @@ public class MainController {
     Object search(@RequestParam("text") String text) {
         SessionFactory s = HibernateUtil.getSessionFactory();
         ArrayList<Persona> l = (ArrayList<Persona>) MainDao.searchPersone(s, text);
+        
+        // bufu
         for(Persona p : l) {
             for(Job j : p.getJobs()) {
                 j.setPersone(null);
