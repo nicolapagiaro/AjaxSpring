@@ -1,9 +1,18 @@
 $(document).ready(function () {
-// on key press sulla ricerca
+    ajax("");
+    
+    // on key press sulla ricerca
     $('#ricerca').keyup(function (e) {
         var txt = $('#ricerca').val();
         // ajax 
-        $.ajax({
+        ajax(txt);
+    });
+});
+
+// funzione per ajax
+function ajax(txt) {
+    console.log(txt);
+    $.ajax({
             type: "POST",
             url: "/ajaxSpring1/search",
             data: "text=" + txt,
@@ -42,6 +51,5 @@ $(document).ready(function () {
                 console.log("Error: " + msg);
             }
         });
-    });
-});
+}
 

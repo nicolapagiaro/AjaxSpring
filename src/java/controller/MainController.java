@@ -23,8 +23,6 @@ public class MainController {
 
     @RequestMapping(value = "/")
     public String index(ModelMap m) {
-        SessionFactory s = HibernateUtil.getSessionFactory();
-        m.put("listaP", MainDao.getPersone(s));
         return "index";
     }
 

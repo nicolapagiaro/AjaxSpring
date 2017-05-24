@@ -37,7 +37,7 @@
                         <div class="col l3 right-align">
                             <div class="input-field col s12">
                                 <input id="ricerca" type="text" class="autocomplete">
-                                <label for="ricerca">Cerca i dipendenti</label>
+                                <label for="ricerca">Cerca persone</label>
                             </div>
                         </div>
                         <div class="col l12">
@@ -52,25 +52,6 @@
                                     </tr>
                                 </thead>
                                 <tbody id="container">
-                                    <c:forEach items="${listaP}" var="item">
-                                        <tr>
-                                            <td>${item.id}</td>
-                                            <td>${item.nome}</td>
-                                            <td>${item.dipartimento.nome}</td>
-                                            <td>
-                                                <c:set var="count" value="0" scope="page" />
-                                                <c:forEach items="${item.jobs}" var="j">
-                                                    <c:set var="count" value="${count + 1}" scope="page"/>
-                                                    ${j.nome}<c:if test="${item.jobs.size() != count}">, </c:if>
-                                                </c:forEach>
-                                                <c:if test="${item.jobs.size() == 0}">-</c:if>
-                                                </td>
-                                                <td>
-                                                    <a href="<c:url value=""/>"><i class="material-icons">mode_edit</i></a>
-                                                <a href="<c:url value=""/>"><i class="material-icons">delete</i></a>
-                                            </td>
-                                        </tr>
-                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>
