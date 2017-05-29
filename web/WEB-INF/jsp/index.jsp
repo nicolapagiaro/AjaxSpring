@@ -58,6 +58,19 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <div class="card hide" id="modifica_card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col l11">
+                            <span class="card-title">Modifica</span>
+                        </div>
+                        <div class="col l1 right-align">
+                            <a href="#!" id="close_card"><i class="material-icons">close</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- page fast loading -->

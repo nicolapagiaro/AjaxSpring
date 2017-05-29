@@ -3,15 +3,24 @@ $(document).ready(function () {
 
     // on key press sulla ricerca
     $('#ricerca').keyup(function (e) {
-        var txt = $('#ricerca').val();
+        var txt = $('#ricerca').val().trim();
         // ajax 
         ajax(txt);
+    });
+
+    // per la modifica
+    $(".trigger").on('click', function (e) {
+        $("#modifica_card").fadeIn("slow");
+    });
+
+    // chiudi il div
+    $("#close_card").on('click', function (e) {
+        $("#modifica_card").fadeOut("slow");
     });
 });
 
 // funzione per ajax
 function ajax(txt) {
-    console.log(txt);
     $.ajax({
         type: "POST",
         url: "/ajaxSpring1/search",
@@ -35,8 +44,7 @@ function ajax(txt) {
 
                 s += "</td>" +
                         "<td>" +
-                        "<a href=''><i class='material-icons'>mode_edit</i></a>" +
-                        "<a href=''><i class='material-icons'>delete</i></a>" +
+                        "<a href='#!' id='" + obj[i].id + "' ><i class='material-icons'>mode_edit</i></a>" +
                         "</td>" +
                         "</tr>";
             }
