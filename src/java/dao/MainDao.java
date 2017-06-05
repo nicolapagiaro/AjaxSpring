@@ -9,7 +9,6 @@ import java.util.List;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import pojo.Dipartimento;
 import pojo.Persona;
 
 /**
