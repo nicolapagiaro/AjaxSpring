@@ -70,5 +70,3 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .button-collapse {
   color: #26a69a;
 }
-
-.trigger {}

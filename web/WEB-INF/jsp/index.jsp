@@ -61,7 +61,7 @@
                 </div>
             </div>
             <br>
-            <div class="card hide" id="modifica_card">
+            <div class="card" id="modifica_card">
                 <div class="card-content">
                     <div class="row">
                         <div class="col l11">

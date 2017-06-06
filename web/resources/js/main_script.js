@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("#modifica_card").fadeOut("fast");
     ajax("");
 
     // on key press sulla ricerca
@@ -7,17 +8,17 @@ $(document).ready(function () {
         // ajax 
         ajax(txt);
     });
-
-    // per la modifica
-    $(".trigger").on('click', function (e) {
-        $("#modifica_card").fadeIn("slow");
-    });
-
+    
     // chiudi il div
     $("#close_card").on('click', function (e) {
         $("#modifica_card").fadeOut("slow");
     });
 });
+
+// gdfh
+function showDiv(id) {
+    $("#modifica_card").fadeIn("slow");
+}
 
 // funzione per ajax
 function ajax(txt) {
@@ -44,7 +45,7 @@ function ajax(txt) {
 
                 s += "</td>" +
                         "<td>" +
-                        "<a href='#!' id='" + obj[i].id + "' ><i class='material-icons'>mode_edit</i></a>" +
+                        "<a href='#!' onclick='showDiv(" + obj[i].id + ")' ><i class='material-icons'>mode_edit</i></a>" +
                         "</td>" +
                         "</tr>";
             }
